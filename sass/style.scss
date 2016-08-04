@@ -1,0 +1,70 @@
+p{
+  margin: 0px;
+  font-family: "Andale Mono";
+}
+html{
+  background-color: white;
+}
+body{
+  width: 100%;
+  margin: 0px;
+}
+.container{
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding-top: 200px;
+  .main-text{
+    font-size:31px;
+    color: #2196f3;
+  }
+  .clock-wrapper{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    margin: 50px auto;
+    .clock-base{
+      width: 150px;
+      height: 150px;
+      background: #2196f3;
+      -webkit-border-radius:50%;
+      -moz-border-radius:50%;
+      border-radius:50%;
+      margin: 0 auto;
+      position: relative;
+      -webkit-box-shadow: 1px 1px 1px 1px grey;
+      -moz-box-shadow: 1px 1px 1px 1px grey;
+      box-shadow: 1px 1px 1px 1px grey;
+    }
+    .needle{
+      position: absolute;
+      background-color: white;
+      width: 65px;
+      top: 75px;
+      left: 185px;
+      -webkit-transform-origin:right;
+      -moz-transform-origin:right;
+      -ms-transform-origin:right;
+      -o-transform-origin:right;
+      transform-origin:right;
+
+      //-webkit-transition: all 1000ms linear;
+      //-moz-transition: all 1000ms linear;
+      //-ms-transition: all 1000ms linear;
+      //-o-transition: all 1000ms linear;
+      //transition: all 1000ms linear;
+    }
+    #hours-needle{
+      height: 4px;
+    }
+    #minutes-needle{
+      height: 3px;
+    }
+    #seconds-needle{
+      height: 2px;
+    }
+  }
+  .time{
+    color: grey;
+  }
+}
